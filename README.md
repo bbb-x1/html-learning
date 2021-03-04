@@ -1,2 +1,2 @@
 # html-learning
-学习HTML
+学习HTML、CSS、JavaScript
