@@ -8,18 +8,32 @@
     <link rel="stylesheet" href="../reset/reset.css">
     <link rel="stylesheet" href="../reset/normalize.css">
     <style>
-        li:not(li:last-child){
-            margin-bottom: 9px;
-        }
-        img
+        /* 设置外部ul的样式 */
+        .img-list
         {
-            width: 192px;
-            height: 152px;
+            /* 设置ul的宽度 */
+            width: 190px;
+            /* 设置ul的高度 */
+            height: 470px;
+            /* 裁剪溢出的内容 */
+            overflow: hidden;
+            /* 使ul在页面中居中(实际上示例不需要这么做) */
+            margin: 50px auto;
+            background-color: #f4f4f4;
         }
+        /* 设置li的位置 */
+        .img-list li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        /* 设置图片的大小 */
+        .img-list img{
+            width: 100%;
+        }
+        
     </style>
 </head>
 <body>
-    <ul>
+    <ul class="img-list">
         <li><a href="javascript:;"><img src="../img/jd_1.webp" alt="jd_1.webp"></a></li>
         <li><a href="javascript:;"><img src="../img/jd_2.webp" alt="jd_2.webp"></a></li>
         <li><a href="javascript:;"><img src="../img/jd_3.webp" alt="jd_3.webp"></a></li>
