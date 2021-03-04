@@ -1,4 +1,2 @@
 # html-learning
-学习HTML、CSS、JavaScript
-# hello world
-bbbxl
+主要学习html+css+javascript基础知识
