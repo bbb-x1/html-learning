@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻列表练习</title>
+    <link rel="stylesheet" href="../reset/reset.css">
+    <style>
+        body {
+            background-color: #bfd;
+        }
+
+        a {
+            /* 统一去掉a标签的下划线 */
+            text-decoration: none;
+        }
+
+        .news-wrapper {
+            background-color: #fff;
+            /* 设置上边框 */
+            border-top: 1px solid #ddd;
+
+            width: 300px;
+
+            height: 358px;
+
+            margin: 50px auto;
+        }
+
+        .news-title {
+            /* 为了让边框和文字宽度一直，需要将h2转换为行内块元素 */
+            display: inline-block;
+            /* 设置高度 */
+            height: 30px;
+            /* 设置上边框 */
+            border-top: 1px solid red;
+            /* 设置margin-top将h2往上移 */
+            margin-top: -1px;
+            /*  */
+            padding-top: 10px;
+        }
+
+        /* 设置title中超链接的样式 */
+        .news-title a {
+            /* 设置文字颜色 */
+            color: #404068;
+            /* 设置文字加粗效果 */
+            font-weight: bold;
+        }
+
+        .news-img {
+            height: 150px;
+        }
+        
+        /* }设置图片的文字效果 */
+        .news-img .img-title {
+            color: #fff;
+            margin-top: -30px;
+            padding-left: 30px;
+            font-weight: bold;
+        }
+
+        .news-list {
+            margin-top: 20px;
+        }
+
+        .news-list li {
+            /* 设置外边距margin */
+            margin-bottom: 17px;
+            /* 设置内边距padding */
+            padding-left: 14px;
+        }
+
+        .news-list li a {
+            font-size: 14px;
+            color: #666;
+        }
+        .news-list li a:hover {
+            color: #c81623;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="news-wrapper">
+
+        <!-- 创建一个新闻标题 -->
+        <h2 class="news-title">
+            <a href="javascript:;">军事</a>
+        </h2>
+
+        <!-- 新闻图片以及新闻标题 -->
+        <div class="news-img">
+            <a href="javascript:;">
+                <img src="../img/163news/163news.webp" alt="">
+
+                <!-- 创建图片标题 -->
+                <h3 class="img-title">祁发宝身边那名翻译 是在校大学生</h3>
+            </a>
+        </div>
+
+        <!-- 新闻列表 -->
+        <ul class="news-list">
+            <li><a href="javascript:;">烈士母亲拒绝其女友照片放进棺木：对她不好</a></li>
+            <li><a href="javascript:;">大陆会在近期解决台湾问题吗？两会透露信息</a></li>
+            <li><a href="javascript:;">国航彩绘机亮相北京冬残奥会倒计时一周年</a></li>
+            <li><a href="javascript:;">疫情下的韩国机场</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
